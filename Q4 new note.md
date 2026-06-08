@@ -8,6 +8,7 @@ sequenceDiagram
     Note over server: adds payload body content to notes array
     server-->>browser: Status code 302, Location: "/exampleapp/notes"
     deactivate server
+    Note right of browser: 302 tells browser to redirect URL 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
     server-->>browser: HTML document
